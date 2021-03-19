@@ -1,0 +1,62 @@
+.feedback__padding {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.background-color__white {
+  background-color: white;
+  width: 100%;
+}
+i {
+  font-size: 18px;
+}
+.alert:last-child {
+  margin-bottom: 0px;
+}
+input[type="number"] {
+  border: none;
+  appearance: none;
+  appearance: textfield;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  outline: none;
+}
+/* hide quantity in input */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.center {
+  align-content: center;
+  align-items: center;
+  align-self: center;
+}
+.form-control__width--54 {
+  width: 54px;
+}
+.form-control__width--42 {
+  width: 42px;
+}
+.form-control__width {
+  width: 75%;
+}
+.btn-none--border {
+  border-radius: 0;
+  border-color: white;
+}
+a:hover {
+  text-decoration: none;
+}
+.btn-outline-info:hover {
+  color: #007bff;
+  background-color: transparent;
+}
+.btn-outline-info:active {
+  color: #007bff;
+  background-color: transparent;
+}
+.btn-outline-info:focus {
+  box-shadow: none;
+}

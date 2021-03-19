@@ -1,0 +1,37 @@
+<div class="background-color__white">
+  <div class="feedback__padding " *ngFor="let item of listArrs">
+    <div class="alert alert-success ">
+      <div class="row">
+        <div class="col-md-4 d-flex center">
+          <span class="pr-2">Phạm vi câu hỏi</span>
+          <input type="text" class="form-control form-control__width--54" [(ngModel)]="item.scopeOfQuestion">
+        </div>
+        <div class="col-md-4 d-flex center">
+          <span class="pr-2">Số câu sai</span>
+          <input type="number" class="form-control form-control__width--42" [(ngModel)]="item.wrongAnswers">
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-1 center">
+          <a (click)="removeArrItem(listArrs,item)"> <i class="fas fa-times"></i></a>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col d-flex center">
+          <span class="pr-2">Link tham khảo</span>
+          <input class="form-control form-control__width" type="text" placeholder="Tìm kiếm link"
+            [(ngModel)]="item.referenceLink">
+        </div>
+      </div>
+      <div class="row justify-content-center py-2" *ngIf="item.wrongAnswers > 2" id="{{item.id}}">
+        <span class="pr-2">Practice percentages, amount of money, and other numbers</span>
+        <a (click)="removeAdvise(item.id)"><i class="fas fa-times"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center py-3">
+    <button type="button" class="btn btn-outline-info btn-none--border" 
+    (click)="addElement()">
+      <h4><i class="fas fa-plus"></i>&nbsp;Thêm Phản Hồi</h4>
+    </button>
+  </div>
+</div>

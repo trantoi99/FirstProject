@@ -1,0 +1,98 @@
+<div class=" background-color__white">
+    <div class="detail--content">
+      <!-- loop for list file -->
+      <div cdkDropList [cdkDropListData]="listFileName"  id="list-2" cdkDropListConnectedTo="list-1"
+       (cdkDropListDropped)="onDrop($event)"
+      cdkDrag *ngFor="let item of listFileName">
+        <div class="alert alert-success my-3">
+          <div class="row">
+            <div class="col-md-5 center">
+              <i class="lni lni-folder"></i>
+              <span>
+                {{item.fileName}}</span>
+            </div>
+            <div class="col-md-3 ">
+              <div class="d-flex center">
+                <span class="pr-2">Điểm cho mỗi câu</span>
+                <input type="number" class="form-control" [(ngModel)]="item.pointPerQuestion">
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="d-flex center">
+                <span class="pr-2">Số Lượng câu hỏi</span>
+                <input type="number" class="form-control" [(ngModel)]="item.numberQuestions">
+              </div>
+            </div>
+            <div class="col-md-1 center">
+              <a><i class="lni lni-close"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="alert alert-success">
+      <div class="row ">
+        <div class="col-md-5 center">
+          <i class="far fa-file-word"></i>
+          <span>
+            Câu hỏi 2</span>
+        </div>
+        <div class="col-md-3 ">
+          <div class="d-flex center">
+            <span class="pr-2">Điểm cho mỗi câu</span>
+            <input type="number" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-1 center">
+          <a><i class="lni lni-close"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-success">
+      <div class="row ">
+        <div class="col-md-5 center">
+          <i class="lni lni-folder"></i>
+          <span>
+            Thư mục 2</span>
+        </div>
+        <div class="col-md-3 ">
+          <div class="d-flex center">
+            <span class="pr-2">Điểm cho mỗi câu</span>
+            <input type="number" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="d-flex center">
+            <span class="pr-2">Số Lượng câu hỏi</span>
+            <input type="number" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-1 center">
+          <a><i class="lni lni-close"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="alert alert-success">
+      <div class="row ">
+        <div class="col-md-5 center">
+          <i class="far fa-file-word"></i>
+          <span>
+            Câu hỏi 2</span>
+        </div>
+        <div class="col-md-3 ">
+          <div class="d-flex center">
+            <span class="pr-2">Điểm cho mỗi câu</span>
+            <input type="number" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-1 center">
+          <a><i class="lni lni-close"></i></a>
+        </div>
+      </div>
+    </div>
+  </div> -->
+    </div>
+  </div>

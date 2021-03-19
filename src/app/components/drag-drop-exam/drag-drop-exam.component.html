@@ -1,0 +1,12 @@
+<div class="background-color__white">
+  <div class="drag-drop-exam--padding">
+    <div cdkDropList [cdkDropListData]="listQuestion" class="movie-list" (cdkDropListDropped)="onDrop($event)"
+      id="list-1" cdkDrag>
+      <div *ngFor="let item of listQuestion" cdkDrag>
+
+        <h5 class="text-primary"><i class="fas fa-folder"></i>
+          &nbsp;{{item.fileName}}</h5>
+      </div>
+    </div>
+  </div>
+</div>
